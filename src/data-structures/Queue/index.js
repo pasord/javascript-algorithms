@@ -11,4 +11,7 @@
 // import './passGame.js'
 
 // 回文检测器
-import './palindrome-checker.js'
+// import './palindrome-checker.js'
+
+// 优先级队列
+import './priority-queue.js'
