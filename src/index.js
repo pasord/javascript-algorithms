@@ -14,4 +14,7 @@
 // import './data-structures/Set/index.js'
 
 // 字典
-import './data-structures/Map/index.js'
+// import './data-structures/Map/index.js'
+
+// 哈希表
+import './data-structures/HashTable/index.js'
