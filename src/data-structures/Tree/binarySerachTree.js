@@ -150,6 +150,7 @@ export default class BinarySearchTree {
     }
 
     // 递归版本
+    // return 就出栈了
     searchNode(node, key){
         if (key < node.key) {
             return this.searchNode(node.left, key)
@@ -163,7 +164,7 @@ export default class BinarySearchTree {
 
     /**
      * 删除节点
-     * a.原则是删除的树还要是二叉搜索树
+     * a.原则是删除树后的树，还要是二叉搜索树
      * b.找到要删除的节点
      * c.找后继节点
      * d.把后继节点“挪到”当前删除节点位置
@@ -197,7 +198,7 @@ export default class BinarySearchTree {
         if (!current) return false
 
         // 4. 找到删除节点后，分3种情况处理:
-        // 4.1 情况, 要删除节点是叶子节点
+        // 4.1 情况1, 要删除节点是叶子节点
         if (current.left === null && current.right === null) {
             // 如果要删除节点是根节点
             if (current.key === this.root.key) {
