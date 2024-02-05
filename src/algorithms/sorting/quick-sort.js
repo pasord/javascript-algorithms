@@ -28,7 +28,9 @@ export const quickSort = (array) => {
 
 
 // 快速排序-原地排序版，不借助新数组
-export function quickSort1 (array) {}
+export function quickSort1 (array) {
+    return quick(array, 0, array.length-1)
+}
 // 快速排序递归函数
 function quick (array, left, right) {
     // 1. 停止切割(递归)条件
