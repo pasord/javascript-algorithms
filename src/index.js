@@ -23,4 +23,7 @@
 // import './data-structures/Tree/index.js'
 
 // 图
-import './data-structures/Graph/index.js'
+// import './data-structures/Graph/index.js'
+
+// 动态规划
+import './algorithms/dynamic-programing/index.js'
