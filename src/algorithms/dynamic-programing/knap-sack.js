@@ -25,7 +25,7 @@ function findValues(n, capacity, kS) {
 export function knapSack(capacity, weights, values, n) {
 const kS = [];
 // 初始化矩阵
-for (let i = 0; i <= n; i++) {
+for (let i = 0; i <= n; i++) { // 矩阵需要等于n
     kS[i] = [];
 }
 // 价值种类 竖向遍历
